@@ -6,12 +6,12 @@ const options = {
     zoomControl: false
 }
 
-const map = L.map("mapid", options).setView([-27.2174915,-49.6530881], 15)
+const map = L.map("mapid", options).setView([-23.5303943,-47.1441749], 15)
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map)
 
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
     popupAnchor: [170, 2]
@@ -19,7 +19,7 @@ const icon = L.icon({
 
 
 
-L.marker([-27.2174915,-49.6530881], { icon })
+L.marker([-23.5303943,-47.1441749], { icon })
 .addTo(map)
 
 function selectImage(event) {
